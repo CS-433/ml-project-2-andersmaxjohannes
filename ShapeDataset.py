@@ -8,13 +8,15 @@ from torchvision import transforms as T
 
 
 class ShapeDataset(torch.utils.data.Dataset):
-    def __init__(self , images , masks):
+    def __init__(self , images , masks, root, transforms = None):
         self.imgs = images
         self.masks = masks
+        self.transforms = transforms
+        self.root = root
 
     def __getitem__(self , idx):
-        img = Image.open("images/" + self.imgs[idx]).convert("RGB")
-        mask = Image.open("masks/" + self.masks[idx])
+        img  = Image.open(os.path.join(self.root, "images", self.imgs[idx])).convert("RGB")
+        mask = Image.open(os.path.join(self.root, "masks", self.masks[idx]))
         mask = np.array(mask)
         obj_ids = np.unique(mask)
         obj_ids = obj_ids[1:]

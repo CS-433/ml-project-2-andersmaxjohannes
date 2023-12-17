@@ -22,10 +22,10 @@ If these links do not work, follow the instructions on their github page.
 
 
 """
-original_image_dir = '/Users/johannes/Downloads/project-1-at-2023-12-15-11-43-93f490dc/images'  # Where your original images are stored
-json_file          = '/Users/johannes/Downloads/project-1-at-2023-12-15-11-43-93f490dc/result.json'
-mask_output_folder = './masks'
-image_output_folder = './images' 
+original_image_dir = './outputImages'  # Where your original images are stored
+json_file          = '/Users/johannes/Downloads/labels_my-project-name_2023-12-17-11-05-01.json'
+mask_output_folder = './Spheres/masks'
+image_output_folder = './Spheres/images' 
 
 
 
