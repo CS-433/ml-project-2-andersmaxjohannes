@@ -6,13 +6,13 @@ import torch
 from torchvision import transforms as T
 
 
-
 class ShapeDataset(torch.utils.data.Dataset):
     def __init__(self , images , masks, root, transforms = None):
         self.imgs = images
         self.masks = masks
         self.transforms = transforms
         self.root = root
+        
 
     def __getitem__(self , idx):
         img  = Image.open(os.path.join(self.root, "images", self.imgs[idx])).convert("RGB")
@@ -33,7 +33,7 @@ class ShapeDataset(torch.utils.data.Dataset):
             ymax = np.max(pos[0])
             boxes.append([xmin , ymin , xmax , ymax])
         boxes = torch.as_tensor(boxes , dtype = torch.float32)
-        labels = torch.ones((num_objs,) , dtype = torch.int64)
+        labels = torch.ones((num_objs,) , dtype = torch.int64) # TODO reflect the actual class
         masks = torch.as_tensor(masks , dtype = torch.uint8)
 
         target = {}
