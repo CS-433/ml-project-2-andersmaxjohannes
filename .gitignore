@@ -7,3 +7,6 @@ inputImages/*
 outputImages/*
 
 testVenv/*
+
+PredImg/*
+!PredImg/.gitinclude
