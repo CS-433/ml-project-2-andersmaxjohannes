@@ -1,2 +1,13 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fEFF99tU)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13114329&assignment_repo_type=AssignmentRepo)
+# Detection and classification of nanoshapes
+The goal of this project is to detect and classify nanoshapes photographed with Transmission Electron Microscopy, to help scientists identify what has been synthesized in the lab. 
+
+# Instructions
+To run the notebook main.py, it is recommended to make a clean python virtual environment, and then install the requirements.
+This can be done by running
+    python -m venv <yourVirtualEnv>
+activating it with
+    source <yourVirtualEnv>/bin/activate 
+then running 
+    pip install -r requirements.txt
+
+Select your venv as kernel for the notebook, and then run all cells.
