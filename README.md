@@ -1,10 +1,13 @@
 # Detection and classification of nanoshapes
 The goal of this project is to detect and classify nanoshapes photographed with Transmission Electron Microscopy, to help scientists identify what has been synthesized in the lab. 
 
-![Nanoshapes image](Cubes.jpg)
+We want to go from images of nanoshapes like this:
+![Nanoshapes image](Mixed.jpg)
 
-![Segmented nanoshapes image](PredCubes.jpg)
+To segmented images like this:
+![Segmented nanoshapes image](PredMixed.png)
 
+This is an image produced by our model. It i
 
 # Instructions
 ### Environment
