@@ -10,3 +10,5 @@ testVenv/*
 
 PredImg/*
 !PredImg/.gitinclude
+
+model_epochs-100_hiddenlayer-128
