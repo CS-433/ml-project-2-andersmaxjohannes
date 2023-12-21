@@ -2,10 +2,12 @@
 The goal of this project is to detect and classify nanoshapes photographed with Transmission Electron Microscopy, to help scientists identify what has been synthesized in the lab. 
 
 We want to go from images of nanoshapes like this:
-![Nanoshapes image](Mixed.jpg)
+
+![Nanoshapes image](Images/Image3.jpg =250x)
 
 To segmented images like this:
-![Segmented nanoshapes image](PredMixed.png)
+
+![Segmented nanoshapes image](PredImg/Pred_model_model_epochs-100_hiddenlayer-128_img2.png.png =250x)
 
 This is an image produced by our model. It i
 
